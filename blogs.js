@@ -15,6 +15,8 @@ class allBlogs {
             if(iframeDoc.readyState === 'complete'){
              window.localStorage.setItem('id',accessKey);   
             }
+            console.log(window.parent);
+            console.log(window.child);
         }, 300);
     }
 }
