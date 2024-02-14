@@ -11,7 +11,7 @@ class allBlogs {
             a.innerHTML += `
             <iframe id="myHtml" src="index.html" style="width:100%;height:calc(100vh - 20px);border:none"></iframe>
             `
-        }, 300);
+        }, 500);
     }
 }
 
