@@ -10,9 +10,7 @@ class allBlogs {
             a.innerHTML += `
             <iframe id="myHtml" src="https://durga250720.github.io/blogs/index.html" style="width:100%;height:calc(100vh - 20px);border:none"></iframe>
             `
-            setTimeout(()=>{
-                window.localStorage.setItem('id',accessKey);
-            },300)
+            window.localStorage.setItem('id',accessKey);
         }, 300);
     }
 }
