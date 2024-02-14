@@ -14,6 +14,7 @@ class allBlogs {
             var iframeDoc = iframe.contentWindow.document;
             if(iframeDoc.readyState === 'complete'){
              window.localStorage.setItem('id',accessKey);   
+            console.log(window.parent);
             }
             console.log(window.parent);
             console.log(window.child);
