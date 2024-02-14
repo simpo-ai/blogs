@@ -3,7 +3,7 @@ class allBlogs {
     constructor() {
         setTimeout(() => {
             let a = document.getElementById('all-blogs')
-            let accessKey = document.getElementById('all-blogs').accessKey;
+            var accessKey = document.getElementById('all-blogs').accessKey;
             localStorage.removeItem('blogDetail')
             console.log(a)
             if (!a) return;
