@@ -9,9 +9,16 @@ class allBlogs {
             console.log(a)
             if (!a) return;
             a.innerHTML += `
-            <embed src="https://durga250720.github.io/blogs/index.html" style="width:100%;height:calc(100vh - 20px);border:none"></embed>
+            <iframe id="myHtml" src="https://durga250720.github.io/blogs/index.html" style="width:100%;height:calc(100vh - 20px);border:none"></iframe>
             `
-        }, 500);
+             setTimeout(() => {
+                document.getElementById('myHtml').contentWindow.postMessage({
+                    key:'id',
+                    value:accessKey,
+                    method:'store'
+                })
+            }, 1000);
+        }, 300);
     }
 }
 
