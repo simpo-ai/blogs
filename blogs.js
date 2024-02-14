@@ -9,7 +9,7 @@ class allBlogs {
             console.log(a)
             if (!a) return;
             a.innerHTML += `
-            <object type="text/html" data="https://durga250720.github.io/blogs/index.html" style="width:100%;height:calc(100vh - 20px);border:none"></object>
+            <embed src="https://durga250720.github.io/blogs/index.html" style="width:100%;height:calc(100vh - 20px);border:none"></embed>
             `
         }, 500);
     }
