@@ -180,6 +180,39 @@
     margin-left: 5px;
     width: 15px;
   }
+.loader {
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      width: 80px;
+      height: 80px;
+      animation: spin 2s linear infinite;
+      position: fixed;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .loading{
+      /* display: flex; */
+      display: none;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      width: 100%;
+      height: calc(100vh - 0px);
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 10001;
+      overflow: hidden;
+    }
 </style>
 </head>
 <body>
@@ -213,6 +246,10 @@
     </div>
     <div style='margin-top:20px'>
             <div id="blogContainer"></div>
+    </div>
+
+    <div class="loading" id="loading">
+        <div id="loader" class="loader"></div>
     </div>
 
     <script src="https://durga250720.github.io/blogs/blogs.min.js"></script>
