@@ -9,7 +9,7 @@ class allBlogs {
             console.log(a)
             if (!a) return;
             a.innerHTML += `
-            <embed src="index.html" style="width:100%;height:calc(100vh - 20px);border:none"></embed>
+            <embed src="pagese/index.html" style="width:100%;height:calc(100vh - 20px);border:none"></embed>
             `
         }, 500);
     }
