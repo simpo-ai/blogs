@@ -10,7 +10,11 @@ class allBlogs {
             a.innerHTML += `
             <iframe id="myHtml" src="https://durga250720.github.io/blogs/index.html" style="width:100%;height:calc(100vh - 20px);border:none"></iframe>
             `
-            window.localStorage.setItem('id',accessKey);
+            var iframe = document.getElementById('myHtml');
+            var iframeDoc = iframe.contentWindow.document;
+            if(iframeDoc.readyState === 'complete'){
+             window.localStorage.setItem('id',accessKey);   
+            }
         }, 300);
     }
 }
