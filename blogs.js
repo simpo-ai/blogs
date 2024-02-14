@@ -10,7 +10,7 @@ class allBlogs {
                 console.log(a)
                 if (!a) return;
                 a.innerHTML += `
-                <iframe id="myHtml" src=index.html?id=${accessKey} style="width:100%;height:calc(100vh - 20px);border:none"></iframe>
+                <iframe id="myHtml" src=https://durga250720.github.io/blogs/index.html?id=${accessKey} style="width:100%;height:calc(100vh - 20px);border:none"></iframe>
                 `
             }
             else{
@@ -21,7 +21,7 @@ class allBlogs {
                 console.log(a)
                 if (!a) return;
                 a.innerHTML += `
-                <iframe id="myHtml" src=home-page.html?id=${accessKey} style="width:100%;height:calc(100vh - 20px);border:none"></iframe>
+                <iframe id="myHtml" src=https://durga250720.github.io/blogs/home-page.html?id=${accessKey} style="width:100%;height:calc(100vh - 20px);border:none"></iframe>
                 `
             }
         }, 300);
