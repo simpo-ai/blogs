@@ -4,8 +4,8 @@ class allBlogs {
         setTimeout(() => {
             let a = document.getElementById('all-blogs')
             let accessKey = document.getElementById('all-blogs').accessKey;
-            window.localStorage.setItem('id',accessKey);
-            window.localStorage.removeItem('blogDetail')
+            localStorage.setItem('id',accessKey);
+            localStorage.removeItem('blogDetail')
             console.log(a)
             if (!a) return;
             a.innerHTML += `
