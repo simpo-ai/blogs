@@ -3,6 +3,77 @@
 <head>
 <title>Page Title</title>
 <style>
+         /* Media query for screens with a width of 600px or below */
+     @media screen and (min-width: 500px) {
+            body{
+              width: 95%;
+            }
+            .latest-blog{
+              flex-direction: column;
+              height: auto;
+              box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+            }
+            .latest-blog-image{
+              width: 100%;
+              img{
+                border-radius: 6px;
+              }
+            }
+            .latest-blog-details{
+              width: 100%;
+              margin-top: 10px;
+            }
+            .latest-blog-title{
+              font-size: 36px;
+              line-height: 46px;
+            }
+            .latest-blog-description{
+              font-size: 20px;
+              line-height: 34px;
+            }
+            #blogContainer{
+              flex-direction: column;
+            }
+            .blog-box{
+              width: 95%;
+              box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+            }
+            .blog-box .blog-image{
+              height: 400px;
+            }
+            .blog-box .blog-title{
+              margin-top: 18px;
+              line-height: 38px;
+            }
+            .blog-box .blog-description {
+              text-align: left;
+              line-height: 26px;
+            }
+            .bottom-section{
+              margin-top: 15px;
+            }
+            .blog-box-time-stamp,.blog-box-read-time{
+              font-size: 24px;
+            }
+            .readmore-text{
+              font-size: 25px;
+            }
+            .arrow-mark{
+              width: 30px;
+            }
+            .read-more{
+              font-size: 24px;
+              img{
+                width: 30px;
+              }
+            }
+            .duration-date{
+              margin-top: 20px;
+            }
+            .time-stamp, .duration{
+              font-size: 20px;
+            }
+    }
     body{
         width: 85%;
         margin: 0 auto;
