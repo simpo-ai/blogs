@@ -2,7 +2,41 @@
 <html>
 <head>
 <title>Page Title</title>
-<style>         
+<style> 
+      @media only screen and (max-width: 767px) {
+            body{
+              width: 95%;
+            }
+            .latest-blog{
+              flex-direction: column;
+              height: auto;
+              box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+            }
+            .latest-blog-image{
+              width: 100%;
+              img{
+                border-radius: 6px;
+              }
+            }
+            .latest-blog-details{
+              width: 100%;
+              margin-top: 10px;
+            }
+            .latest-blog-title{
+              font-size: 18px;
+              line-height: 30px;
+            }
+            #blogContainer{
+              flex-direction: column;
+            }
+            .blog-box{
+              width: 85%;
+              box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+            }
+            .duration-date{
+              margin-top: 20px;
+            }
+    }
     body{
         width: 85%;
         margin: 0 auto;
